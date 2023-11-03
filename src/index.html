@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>ENV_META_TITLE</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link href="assets/css/style.min.css" rel="stylesheet" />
+
+        <style>
+            :root {
+                --masthead-bg-color: ENV_OVERLAY_COLOR ;
+                --body-bg-color: ENV_BACKGROUND_COLOR ;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+
+        <!-- Background Video-->
+        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
+        <!-- Masthead-->
+        <div class="masthead">
+            <div class="masthead-content text-white">
+                <div class="container-fluid px-4 px-lg-0">
+                    <h1 class="lh-1 mb-4">ENV_TITLE</h1>
+                    <p class="mb-5">ENV_SUBTITLE</p>
+                    <p class="footer">ENV_FOOTER</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/main.min.js"></script>
+    </body>
+</html>

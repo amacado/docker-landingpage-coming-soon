@@ -1,0 +1,20 @@
+{
+  "name": "docker-landingpage-coming-soon",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+  },
+  "scripts": {
+    "build-sass": "sass --style compressed ./src/scss/style.scss ./dist/assets/css/style.min.css",
+    "copy-assets": "copyfiles -u 1 ./src/assets/**/* ./dist/ && copyfiles -u 1 ./src/index.html ./dist/",
+    "minify": "minify ./dist/assets/js/main.js > ./dist/assets/js/main.min.js",
+    "build": "yarn run build-sass && yarn run copy-assets && yarn run minify"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "minify": "^10.5.2",
+    "sass": "^1.69.5"
+  }
+}
